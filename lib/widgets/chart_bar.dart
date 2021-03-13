@@ -5,13 +5,15 @@ class ChartBar extends StatelessWidget {
   final double spendingAmount;
   final double percentageSpent;
 
-  ChartBar(
+  const ChartBar(
       {@required this.label,
       @required this.spendingAmount,
       @required this.percentageSpent});
 
   @override
   Widget build(BuildContext context) {
+    
+    print('build() ChartBart');
     return LayoutBuilder(
       builder: (ctx, contraints) {
         return Column(
